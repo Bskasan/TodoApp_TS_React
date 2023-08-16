@@ -5,7 +5,7 @@ import TodoList from "../components/TodoList";
 
 const url = "https://64dcff14e64a8525a0f77a87.mockapi.io/todos";
 
-type AddFunc = (text: string) => void;
+
 
 const Home = () => {
   const [todos, setTodos] = useState<TodoType[]>([]);
@@ -37,7 +37,7 @@ const Home = () => {
 
   return (
     <div className="main">
-      <InputForm />
+      <InputForm addTodo={addTodo} />
       <TodoList todos={todos} />
     </div>
   );
