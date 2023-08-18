@@ -6,10 +6,10 @@ Welcome to the React TypeScript Todo App repository! This project serves as a be
 
 ### Features
 
-- Clean Code: The codebase is written in a clean and organized manner, making it easy to understand and modify.
-- TypeScript: Utilizing TypeScript provides enhanced code quality and better development experience through type checking.
-- Customizable Styling: You can easily replace the included CSS with your own styles to match your preferred design aesthetic.
-- Interactive Interface: The app provides a user-friendly interface to add, remove, and mark tasks as complete.
+- **Clean Code:** The codebase is written in a clean and organized manner, making it easy to understand and modify.
+- **TypeScript:** Utilizing TypeScript provides enhanced code quality and better development experience through type checking.
+- **Customizable Styling:** You can easily replace the included CSS with your own styles to match your preferred design aesthetic.
+- **Interactive Interface:** The app provides a user-friendly interface to add, remove, and mark tasks as complete.
 
 ### How to Use
 
@@ -31,3 +31,7 @@ npm start
 
 
 Feel free to explore the codebase and experiment with different modifications. Happy coding!
+
+### Contributing
+
+If you find any bugs, issues, or opportunities for enhancement, we welcome contributions! Please feel free to open a pull request.
