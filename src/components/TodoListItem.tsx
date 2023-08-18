@@ -6,7 +6,11 @@ interface IListItem {
   deleteTodo: DeleteFunc;
 }
 
-const TodoListItem: React.FC<IListItem> = ({ item, toggleTodo }) => {
+const TodoListItem: React.FC<IListItem> = ({
+  item,
+  toggleTodo,
+  deleteTodo,
+}) => {
   return (
     <li>
       {item.isDone ? (
@@ -16,7 +20,7 @@ const TodoListItem: React.FC<IListItem> = ({ item, toggleTodo }) => {
       ) : (
         <p onClick={() => toggleTodo}> {item.task} </p>
       )}
-      <span className="task-icons">✖️</span>
+      <span className="task-icons" onClick={() => deleteTodo(item.id)}>✖️</span>
     </li>
   );
 };
