@@ -1,5 +1,7 @@
 # Todo App with Typescript & React
 
+![todoApp](https://github.com/Bskasan/TodoApp_TS_React/assets/53233822/42b46ea9-4cfc-4869-8bf1-b5950e221443)
+
 Welcome to the React TypeScript Todo App repository! This project serves as a beginner-friendly guide for creating your own customizable todo app using React and TypeScript. Whether you're new to programming or looking to strengthen your frontend development skills, this repository can help you get started on building a functional todo application.
 
 ### Features
