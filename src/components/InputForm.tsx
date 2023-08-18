@@ -27,7 +27,7 @@ const InputForm: React.FC<IInputForm> = ({ addTodo }) => {
         onClick={handleClick}
         disabled={!task}
       >
-        Add New Todo
+        Add
       </button>
     </div>
   );
