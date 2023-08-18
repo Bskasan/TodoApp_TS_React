@@ -5,8 +5,6 @@ import TodoList from "../components/TodoList";
 
 const url = "https://64dcff14e64a8525a0f77a87.mockapi.io/todos";
 
-
-
 const Home = () => {
   const [todos, setTodos] = useState<TodoType[]>([]);
 
@@ -31,6 +29,15 @@ const Home = () => {
     } catch (error) {}
   };
 
+  const toggleTodo: ToggleFunc = async (item) => {
+    try {
+      await axios.put(`${url}/${item.id}`, { ...item, isDone: !item.isDone });
+      getTodos();
+    } catch (error) {
+      console.log(error);
+    }
+  };
+
   useEffect(() => {
     getTodos();
   }, []);
@@ -38,7 +45,7 @@ const Home = () => {
   return (
     <div className="main">
       <InputForm addTodo={addTodo} />
-      <TodoList todos={todos} />
+      <TodoList todos={todos} toggleTodo={toggleTodo} />
     </div>
   );
 };

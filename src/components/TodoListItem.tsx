@@ -2,6 +2,7 @@ import React from "react";
 
 interface IListItem {
   item: TodoType;
+  toggleTodo: ToggleFunc;
 }
 
 const TodoListItem: React.FC<IListItem> = ({ item }) => {
