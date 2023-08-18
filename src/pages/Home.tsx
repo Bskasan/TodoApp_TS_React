@@ -38,6 +38,8 @@ const Home = () => {
     }
   };
 
+  
+
   useEffect(() => {
     getTodos();
   }, []);
